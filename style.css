@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgb(245, 244, 196);
+    font-family: Calibri, sans-serif;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bgCal {
+    background-color: #f8f4f5;
+}
+
+.calDiv {
+    max-width: 800px;
+    border: 1px solid black;
+}
+
+.calBtn {
+    font-size: 22px;
+    width: 75px;
+    height: 77px !important;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 1px;
+    margin: 2px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+}
+
+.cutBtn {
+    width: 99%;
+    cursor: pointer;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    padding: 20px 8px;
+    background-color: #f8f4f5;
+}
+
+.zeroBtn {
+    width: 73.5%;
+}
+
+.calHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerFlex {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    gap: 10px;
+}
+
+.fontNav {
+    font-size: 24px;
+    padding: 7px 17px;
+}
+
+.bottomNav {
+    padding-bottom: 3px;
+}
+
+.crossDesign {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.paddAdjust {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+@media only screen and (max-width : 425px) {
+    .calBtn {
+        font-size: 22px;
+        width: 60px;
+        height: 65px !important;
+    }
+
+    .cutBtn {
+        width: 98%;
+    }
+
+    .zeroBtn {
+        width: 73%;
+    }
+}
+
+.historyDiv {
+    text-align: center;
+    padding-bottom: 60px
+}

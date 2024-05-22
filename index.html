@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator App</title>
+</head>
+
+<body>
+
+    <div class="mainContainer">
+        <div class="calDiv">
+            <div class="bgCal calHeader">
+                <div class="headerFlex bgCal">
+                    <div class="bgCal"><img src="./assets/calculator-icon.JPG" alt=""></div>
+                    <div class="bgCal"><span class="bgCal calText">Calculator</span></div>
+                </div>
+                <div class="headerFlexNav bgCal">
+                    <div class="bgCal fontNav crossDesign">x</div>
+                </div>
+            </div>
+            <input type="text" class="input" id="inputCal" />
+            <div class="bgCal paddAdjust">
+                <button class="calBtn  cutBtn" onclick="clearResult()">C</button>
+            </div>
+            <div class="bgCal paddAdjust">
+                <button class="calBtn" onclick="getValue(7)">7</button>
+                <button class="calBtn" onclick="getValue(8)">8</button>
+                <button class="calBtn" onclick="getValue(9)">9</button>
+                <button class="calBtn" onclick="getValue('*')">x</button>
+            </div>
+            <div class="bgCal paddAdjust">
+                <button class="calBtn" onclick="getValue(4)">4</button>
+                <button class="calBtn" onclick="getValue(5)">5</button>
+                <button class="calBtn" onclick="getValue(6)">6</button>
+                <button class="calBtn" onclick="getValue('-')">-</button>
+            </div>
+            <div class="bgCal paddAdjust">
+                <button class="calBtn" onclick="getValue(1)">1</button>
+                <button class="calBtn" onclick="getValue(2)">2</button>
+                <button class="calBtn" onclick="getValue(3)">3</button>
+                <button class="calBtn" onclick="getValue('+')">+</button>
+            </div>
+            <div class="bgCal bottomNav paddAdjust">
+                <button class="calBtn zeroBtn" onclick="getValue(0)">0</button>
+                <button class="calBtn" onclick="getCalculation()">=</button>
+            </div>
+        </div>
+    </div>
+    <div class="historyDiv">
+        <p id="historyResult"></p>
+    </div>
+
+    <script src="./App.js"></script>
+</body>
+
+</html>
