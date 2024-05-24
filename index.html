@@ -18,10 +18,10 @@
                     <div class="bgCal"><span class="bgCal calText">Calculator</span></div>
                 </div>
                 <div class="headerFlexNav bgCal">
-                    <div class="bgCal fontNav crossDesign">x</div>
+                    <div class="bgCal fontNav crossDesign" style="padding-top: 2px;">x</div>
                 </div>
             </div>
-            <input type="text" class="input" id="inputCal" />
+            <input type="text" class="input" id="inputCal" placeholder="0" />
             <div class="bgCal paddAdjust">
                 <button class="calBtn  cutBtn" onclick="clearResult()">C</button>
             </div>
@@ -48,9 +48,10 @@
                 <button class="calBtn" onclick="getCalculation()">=</button>
             </div>
         </div>
-    </div>
-    <div class="historyDiv">
-        <p id="historyResult"></p>
+        <div class="historyDiv">
+            <div>History</div>
+            <p id="historyResult" style="color: darkgrey; margin-top: 20px;"></p>
+        </div>
     </div>
 
     <script src="./App.js"></script>

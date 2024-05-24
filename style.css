@@ -49,6 +49,10 @@
     background-color: #f8f4f5;
 }
 
+.input::placeholder {
+    color: black;
+}
+
 .zeroBtn {
     width: 73.5%;
 }
@@ -103,6 +107,30 @@
 }
 
 .historyDiv {
-    text-align: center;
-    padding-bottom: 60px
+    position: absolute;
+    left: 13%;
+    top: 100px;
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+@media only screen and (max-width : 768px) {
+    .calDiv {
+        margin-top: 60px;
+    }
+
+    .historyDiv {
+        position: static;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    .mainContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+    }
 }

@@ -1,23 +1,33 @@
 const inputCal = document.getElementById("inputCal");
 const historyPara = document.getElementById("historyResult");
+let counter = 1;
 
 const finalResultHistory = [];
-inputCal.focus();
 
 const getValue = (num) => {
-    inputCal.value += num
-    inputCal.focus()
+    inputCal.value += num;
+    inputCal.focus();
 }
 
 const clearResult = () => {
-    inputCal.value = ""
-    inputCal.focus()
+    inputCal.value = "";
+    inputCal.focus();
 }
 
 const getCalculation = () => {
+    try {
+        const result = eval(inputCal.value);
+        const calculationString = `${counter}. ${inputCal.value} = ${result}`;
 
-    inputCal.value = eval(inputCal.value)
-    finalResultHistory.push(inputCal.value)
-    historyPara.innerHTML = finalResultHistory.join("<br />");
-    inputCal.focus()
+        finalResultHistory.push(calculationString);
+        historyPara.innerHTML = finalResultHistory.join(`<br />`);
+        inputCal.value = result;
+
+        counter++;
+        inputCal.focus();
+
+    } catch (error) {
+        inputCal.value = "Error";
+        inputCal.focus();
+    }
 }
